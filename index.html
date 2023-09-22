@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <title>Zewana</title>
 </head>
-<body class="min-h-screen bg-gray-300">
+<body class="min-h-screen">
 
     <!-- Start navbar -->
     <nav class="bg-white shadow-md">
@@ -28,7 +28,7 @@
                         <span class="block absolute top-0 left-0 duration-500 w-0 h-1 bg-blue-500 z-10"></span>
                         other
                     </a>
-                    <div id="menu" class="absolute top-full right-0 lg:right-6 bg-white border-t border-t-gray-300 flex justify-center h-0 overflow-hidden">
+                    <div id="menu" class="absolute top-full right-0 lg:right-6 bg-white border-t border-t-gray-300 flex justify-center h-0 overflow-hidden z-50">
                         <img class="hidden lg:block" src="./public/images/megamenu.png" alt="navbar image">
                         <div class="flex flex-col gap-0 lg:flex-row lg:gap-10 font-bold text-blue-500">
                             <ul>
@@ -102,6 +102,25 @@
         </div>
     </nav>
     <!-- End navbar -->
+
+    <!-- Start main content -->
+    <main>
+
+        <!-- Start landing -->
+        <section class="relative bg-gray-300 h-[calc(100vh-64px)] after:absolute after:bottom-0 after:left-0 after:border after:border-l-[50vw] after:border-r-[50vw] after:border-t-[100px] after:border-b-[100px] after:border-b-white after:border-r-white after:border-t-transparent after:border-l-transparent after:z-30 pt-20">
+            <div class="relative container mx-auto px-6 z-40 flex justify-center items-center gap-5">
+                <div class="w-1/2">
+                    <h1 class="text-5xl capitalize font-bold">welcome, 
+                    to zewana company</h1>
+                    <p class="mt-3 text-xl text-gray-500">Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
+                </div>
+                <img width="550px" src="./public/images/landing-image.png" alt="landing image">
+            </div>
+        </section>
+        <!-- End landing -->
+
+    </main>
+    <!-- End main content -->
 
     <script src="./public/js/index.js"></script>
 </body>
