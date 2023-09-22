@@ -7,6 +7,7 @@ module.exports = {
         "bounce-slow": "bounce_slow 3s infinite",
         "heading-before":"heading_before 500ms linear both",
         "heading-after":"heading_after 500ms linear both",
+        "articles-flesh": "flesh 1.5s infinite",
       },
       keyframes: {
         bounce_slow: {
@@ -41,6 +42,14 @@ module.exports = {
             "border-radius": "0",
             "height": "100%",
             "width": "50%"
+          }
+        },
+        flesh: {
+          "0%, 100%":{
+            "transform": "translateX(0)"
+          },
+          "50%": {
+            "transform": "translateX(10px)"
           }
         }
 
