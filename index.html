@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <title>Zewana</title>
 </head>
-<body class="flex justify-center items-center min-h-screen">
-    
-    <h1 class="capitalize text-5xl text-blue-500 flex gap-5">
-        <i class="fa-solid fa-envelope text-5xl text-blue-500"></i>
-        hello world
-    </h1>
+<body class="min-h-screen">
+
+    <!-- Start navbar -->
+    <nav class="shadow-md">
+        <div class="container mx-auto px-6 flex justify-between flex-col items-center lg:flex-row lg:items-start">
+            <span class="h-16 flex justify-center items-center text-xl sm:text-3xl text-blue-500 font-black capitalize">zewana</span>
+            <ul class="h-16 flex justify-center items-center capitalize text-sm sm:text-xl">
+                <li class="h-full">
+                    <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">articles</a>
+                </li>
+                <li class="h-full">
+                    <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">gallery</a>
+                </li>
+                <li class="h-full">
+                    <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">features</a>
+                </li>
+                <li class="h-full">
+                    <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">other</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navbar -->
 
     <script src="./public/js/index.js"></script>
 </body>
