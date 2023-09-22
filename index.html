@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <title>Zewana</title>
 </head>
-<body class="min-h-screen">
+<body class="min-h-screen bg-gray-300">
 
     <!-- Start navbar -->
-    <nav class="shadow-md">
-        <div class="container mx-auto px-6 flex justify-between flex-col items-center lg:flex-row lg:items-start">
+    <nav class="bg-white shadow-md">
+        <div class="relative container mx-auto px-6 flex justify-between flex-col items-center lg:flex-row lg:items-start">
             <span class="h-16 flex justify-center items-center text-xl sm:text-3xl text-blue-500 font-black capitalize">zewana</span>
-            <ul class="h-16 flex justify-center items-center capitalize text-sm sm:text-xl">
+            <ul class="relative lg:static h-16 flex justify-center items-center capitalize text-sm sm:text-xl">
                 <li class="h-full">
                     <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">articles</a>
                 </li>
@@ -24,7 +24,79 @@
                     <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">features</a>
                 </li>
                 <li class="h-full">
-                    <a href="#" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">other</a>
+                    <a href="#" id="seconde-menu-btn" class="relative flex justify-center items-center h-full p-2 sm:px-5 hover:text-blue-500 hover:bg-gray-100 before:absolute before:top-0 before:left-0 before:duration-500 before:w-0 before:h-1 before:bg-blue-500 hover:before:w-full">
+                        <span class="block absolute top-0 left-0 duration-500 w-0 h-1 bg-blue-500"></span>
+                        other
+                    </a>
+                    <div id="menu" class="absolute top-full right-0 lg:right-6 bg-white border-t border-t-gray-300 hidden justify-center p-4">
+                        <img class="hidden lg:block" src="./public/images/megamenu.png" alt="navbar image">
+                        <div class="flex flex-col gap-0 lg:flex-row lg:gap-10 font-bold text-blue-500">
+                            <ul>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-comments fa-fw"></i> 
+                                        testimonials
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2 min-w-[191px]">
+                                        <i class="far fa-user fa-fw"></i> 
+                                        team members
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-building fa-fw"></i> 
+                                        services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-check-circle fa-fw"></i> 
+                                        our skills
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 hover:bg-gray-100 px-2 border-b border-b-gray-300 lg:border-b-0">
+                                        <i class="far fa-clipboard fa-fw"></i> 
+                                        how it works
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-calendar-alt fa-fw"></i> 
+                                        events
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="fas fa-server fa-fw"></i> 
+                                        pricing plans
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-play-circle fa-fw"></i> 
+                                        top videos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 border-b border-b-gray-300 hover:bg-gray-100 px-2">
+                                        <i class="far fa-chart-bar fa-fw"></i> 
+                                        stats
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block py-3 hover:bg-gray-100 px-2 min-w-[230px]">
+                                        <i class="fas fa-percent fa-fw"></i> 
+                                        request a discount
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
