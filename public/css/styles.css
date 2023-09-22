@@ -576,8 +576,16 @@ video {
   position: relative;
 }
 
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .left-0 {
   left: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
 }
 
 .right-0 {
@@ -592,20 +600,8 @@ video {
   top: 100%;
 }
 
-.bottom-5 {
-  bottom: 1.25rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.bottom-6 {
-  bottom: 1.5rem;
+.bottom-4 {
+  bottom: 1rem;
 }
 
 .z-10 {
@@ -691,22 +687,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes bounce_slow {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
-.animate-bounce-slow {
-  animation: bounce_slow 3s infinite;
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -721,6 +701,22 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+@keyframes bounce_slow {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce_slow 3s infinite;
 }
 
 .flex-col {
@@ -812,8 +808,12 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-5xl {
@@ -829,6 +829,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-black {
@@ -924,9 +934,9 @@ video {
   border-width: 1px;
 }
 
-.after\:border-b-\[100px\]::after {
+.after\:border-b-\[75px\]::after {
   content: var(--tw-content);
-  border-bottom-width: 100px;
+  border-bottom-width: 75px;
 }
 
 .after\:border-l-\[50vw\]::after {
@@ -939,9 +949,9 @@ video {
   border-right-width: 50vw;
 }
 
-.after\:border-t-\[100px\]::after {
+.after\:border-t-\[75px\]::after {
   content: var(--tw-content);
-  border-top-width: 100px;
+  border-top-width: 75px;
 }
 
 .after\:border-b-white::after {
@@ -1025,5 +1035,14 @@ video {
 
   .lg\:border-b-0 {
     border-bottom-width: 0px;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
