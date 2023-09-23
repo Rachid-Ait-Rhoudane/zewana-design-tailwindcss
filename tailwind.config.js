@@ -10,6 +10,9 @@ module.exports = {
         "articles-flesh": "flesh 1.5s infinite",
         "flash": "animation_flash 1s linear"
       },
+      borderWidth: {
+        "tr": "500px"
+      },
       keyframes: {
         bounce_slow: {
           "0%, 100%": {
