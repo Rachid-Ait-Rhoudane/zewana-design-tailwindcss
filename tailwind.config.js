@@ -8,6 +8,7 @@ module.exports = {
         "heading-before":"heading_before 500ms linear both",
         "heading-after":"heading_after 500ms linear both",
         "articles-flesh": "flesh 1.5s infinite",
+        "flash": "animation_flash 1s linear"
       },
       keyframes: {
         bounce_slow: {
@@ -50,6 +51,12 @@ module.exports = {
           },
           "50%": {
             "transform": "translateX(10px)"
+          }
+        },
+        animation_flash: {
+          "100%": {
+            "width": "500%",
+            "height": "500%"
           }
         }
 
